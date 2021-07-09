@@ -1,17 +1,8 @@
 // for loop keeps running while condition is true
 
-for(let rep =5; rep <= 10; rep++){
- console.log((`lifting weights reptition ${rep}`));
+for (let rep = 5; rep <= 10; rep++) {
+  console.log(`lifting weights reptition ${rep}`);
 }
-
-
-
-
-
-
-
-
-
 
 //example - cj
 
@@ -19,24 +10,23 @@ for(let rep =5; rep <= 10; rep++){
 
 // sum and count the numbers in an array
 
-const numbers = [1,2,3,4];
-
+const numbers = [1, 2, 3, 4];
 
 function sumOfArray(params) {
-    let sum = 0;
-    // for loop iteration
-    // looping arrays
-    for (let i = 0; i < params.length; i++) {
-        // if(params[i] == 2) {
-        //     continue;
-        // }
-        sum = sum + params[i];
-        // if(sum == 6) {
-        //     break;
-        // }
-    }
+  let sum = 0;
+  // for loop iteration
+  // looping arrays
+  for (let i = 0; i < params.length; i++) {
+    // if(params[i] == 2) {
+    //     continue;
+    // }
+    sum = sum + params[i];
+    // if(sum == 6) {
+    //     break;
+    // }
+  }
 
-    return sum;
+  return sum;
 }
 
 console.log(numbers);
