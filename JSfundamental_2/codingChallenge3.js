@@ -2,12 +2,12 @@ const markr = {
   fullName: "Mark Miller",
   weight: 78,
   height: 1.69,
-  calc: function () {
+  calcBMI: function () {
     this.bmi = this.mass / this.height ** 2;
     return this.bmi;
   },
 };
-mark.bmi();
+mark.calcBMI();
 
 const john = {
   fullName: "John Smith",
