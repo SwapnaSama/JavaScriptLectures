@@ -17,13 +17,13 @@ function sumOfArray(params) {
   // for loop iteration
   // looping arrays
   for (let i = 0; i < params.length; i++) {
-    // if(params[i] == 2) {
-    //     continue;
-    // }
+    if (params[i] == 2) {
+      continue;
+    }
     sum = sum + params[i];
-    // if(sum == 6) {
-    //     break;
-    // }
+    if (sum == 6) {
+      break;
+    }
   }
 
   return sum;
