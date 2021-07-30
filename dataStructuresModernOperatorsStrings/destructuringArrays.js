@@ -70,3 +70,27 @@ const [a1, b1] = [1, 3, 4];
 console.log(a1, b1);
 
 // order of variables matters when destructuring arrays.
+
+//cj
+
+// mutating arrays using spread operator
+// const arr1 = [1, 3, 4, 5];
+// const arr2 = [5, 6, ...arr1];
+// console.log(arr2);
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = arr1;
+
+arr2[3] = 9;
+
+console.log(arr1);
+
+//mutation in Objects
+const person = {
+  firstName: "sap",
+  lastName: "sama",
+};
+const person1 = person;
+
+person1.role = "developer";
+console.log(person);

@@ -10,6 +10,8 @@ console.log("" || "sap"); // sap is truthy value
 console.log(true || 0); // true is truthy value
 console.log(undefined || null); // undefined is a falsy values so it returns null but even null is falsy value
 
+// or operator looks for truthy value if it finds, stops looking and prints it
+
 console.log(undefined || 0 || "" || "hello" || 23 || null);
 
 numGuests = 23;
@@ -24,3 +26,8 @@ console.log(0 && "sap"); // if first value is falsy value then it returns falsy 
 console.log(7 && "sap"); // sap value returns
 
 console.log("hello" && 23 && null && "sapp"); // null
+
+console.log(1 && 6 && 2 && 4);
+
+// or operator looks for true, and if it does not find truthy values, prints last falsy value
+// and operator looks for false, and if it does not find falsy values, prints last truthy value

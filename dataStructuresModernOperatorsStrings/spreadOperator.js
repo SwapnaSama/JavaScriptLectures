@@ -1,6 +1,6 @@
 // spread operator extracts values from array or object and can be used in the program
 // Spread operator is used to unpack elements in array
-const arr = [1, 2];
+const arr = [1, 2, 3];
 
 console.log(...arr);
 console.log(arr);
@@ -44,7 +44,7 @@ const halfCircle = {
 console.log(halfCircle);
 
 // iterables : arrays, strings, maps, sets. NOT Objects
-const str = "sa";
+const str = "sassss";
 const letters = [...str, " ", "s."];
-console.log(letters); // used spread operator when building an array or only when we pass values into the function.
+console.log(...letters); // used spread operator when building an array or only when we pass values into the function.
 console.log(...str);
