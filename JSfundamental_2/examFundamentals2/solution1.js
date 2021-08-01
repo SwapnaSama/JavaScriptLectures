@@ -9,9 +9,9 @@ const computerProduct = function (numbers) {
   return computerProduct;
 };
 const checkLimit = function (computerProduct) {
-  while( i >= 20) {
+  if( i >= 20) {
     console.log( "true");
-  } else{
+  } else {
     console.log("false");
   }
 
