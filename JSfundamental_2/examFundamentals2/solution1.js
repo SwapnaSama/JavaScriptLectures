@@ -1,19 +1,21 @@
-const numbers = [1, 2, 3];
-const prodct = 2;
-const computerProduct = function (numbers) {
+const numbers = [1, 2, 3, 5];
+const computeProduct = function (numbers) {
+  let product = 1;
   for (let i = 0; i < numbers.length; i++) {
-    const product = prodct * numbers[i];
-    console.log(numbers[i]);
+    product = product * numbers[i];
   }
-  console.log("product: " + product);
-  return computerProduct;
+  return product;
 };
-const checkLimit = function (computerProduct) {
-  if( i >= 20) {
-    console.log( "true");
-  } else {
-    console.log("false");
-  }
 
+const checkLimit = function(i) {
+  if( i <= 20) {
+    return true;
+  } else {
+    return false;
+  }
 }
-console.log(computerProduct(numbers));
+
+const prodValue = computeProduct(numbers);
+console.log(prodValue);
+console.log(checkLimit(prodValue));
+
