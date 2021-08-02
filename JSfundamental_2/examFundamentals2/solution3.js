@@ -3,8 +3,11 @@ const contactDetails = {
   address: "2015 Montreal",
   phoneNumber: 4389086756,
 };
-const entireArray = mixedArray.push(contactDetails);
+mixedArray.push(contactDetails);
+
+for (const ele of mixedArray) {
+  console.log(ele);
+}
+console.log(mixedArray.pop());
 
 console.log(mixedArray);
-// console.log(`Entire array is [${entireArray}].
-// contactDetails object is {${contactDetails}} `);

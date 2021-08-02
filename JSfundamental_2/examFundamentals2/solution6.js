@@ -1,4 +1,4 @@
 const array = ["swapna", "is", "a", "js", "developer"];
-array.splice(4, 1, "lover");
+array.splice(array.length - 2, 1, "lover");
 console.log(array);
-console.log(array.join( ' ' ));
+console.log(array.join(" "));
